@@ -12,13 +12,13 @@ Password()
 
 Func Start()
 	
-	Run("AC4BFSP.exe") ;<-- replace with the game exe
+		Run("AC4BFSP.exe") ;<-- replace with the game exe
 	
-	Do
+		Do
 	
-		Sleep(500)
+			Sleep(500)
 	
-	Until WinExists("[CLASS:uplay_start]")
+		Until WinExists("[CLASS:uplay_start]")
 	
 EndFunc
 
@@ -26,9 +26,9 @@ Func Password()
 
         If WinExists("[CLASS:uplay_start]") Then
 				
-				Send("{TAB}")
-                Send("enterpasswordhere")
-				Send("{ENTER}")
+			Send("{TAB}")
+			Send("enterpasswordhere")
+			Send("{ENTER}")
         
 		EndIf
 
